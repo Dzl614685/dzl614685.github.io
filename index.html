@@ -4,18 +4,27 @@
 	<head>
 		<meta charset="utf-8">
 		<title>self-introduction</title>
-		<embed src="music.mp3" autostart="true" loop="true" hidden="true"></embed>
+			<audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+			src="music.mp3">
+			</audio>
 		<style type="text/css">
 			/* CSS Document */
 			* {
+				/*内外边距为0*/
 				margin: 0;
 				padding: 0;
+				list-style:none;
+				text-decoration:none;
+				/*去掉没必要的样式*/
 			}
 
 			a {
 				text-decoration: none;
 			}
 
+			audio{
+				display:none;		
+			}
 			.clearfix:after {
 				content: "";
 				display: block;
@@ -104,29 +113,61 @@
 			.orange {
 				background-color: orange;
 			}
+			.nav{
+				height:40px;
+				background:linear-gradient(orange,#e60)
+			}
+			.navlist li{
+				float:left;
+				height:40px;
+				width:100px;
+				line-height:40px;
+				text-align:center;
+			}
+			.navlist a{
+				color:#000;
+				display:block;
+			}
+			.navlist{
+				width:400px;
+				margin:auto;
+			}
+			.navlist a:hover{
+				background:#fa0;
+			}
 		</style>
 	</head>
 
 	<body>
-		<div class="content">
-			<img src="picture.jpg" alt="">
-			<div class="content_r clearfix">
-				<div class="content_l clearfix">
-					<h2>Hi~I'm D, Welcome here ！</h2>
-					<p class="cc">欢迎来到我的主页，一位正在学习的咸鱼~</p>
-					<p class="cc">爱好躺平，偶尔看看电影</p>
-					<br>
-					<p class="color_1">Life is like a box of chocolates, you never know what you are going to get.</p>
-					<p class="color_1">生活就像一盒巧克力,你永远不知道下一个是什么</p>
-					<br>
-					<p class="deeppink">只要路是对的，就不怕路远。</p>
-					<p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
-					<br>
-					<p class="color_1">If you are ever in trouble, don't try to be brave,just run, just run away.</p>
-					<p class="color_1">你若遇上麻烦，不要逞强，你就跑，远远跑开</p>
-				</div>
-			</div>
+		<div class="nav">
+		<ul class="navlist">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="shell.html">简介</a></li>
+			<li><a href="hobby.html">爱好</a></li>
+			<li><a href="photo.html">影集(最后点)</a></li>
+
 		</div>
+		<div class="content">
+		<img src="picture.jpg" alt="">
+		   <div class="content_r clearfix">
+		       <div class="content_l clearfix">
+				<h2>Hi~I'm D, Welcome here ！</h2>
+				<p class="cc">欢迎来到我的主页，一位正在学习的咸鱼~</p>
+				<p class="cc">爱好躺平，偶尔看看电影</p>
+				<br>
+				<p class="color_1">Life is like a box of chocolates, you never know what you are going to get.</p>
+				<p class="color_1">生活就像一盒巧克力,你永远不知道下一个是什么</p>
+				<br>
+				<p class="deeppink">只要路是对的，就不怕路远。</p>
+				<p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
+				<br>
+				<p class="color_1">If you are ever in trouble, don't try to be brave,just run, just run away.</p>
+				<p class="color_1">你若遇上麻烦，不要逞强，你就跑，远远跑开</p>
+			    </div>
+		          </div>
+		</div>
+ 	       
 	</body>
+
 </html>
 
